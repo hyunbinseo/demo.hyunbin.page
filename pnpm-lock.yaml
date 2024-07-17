@@ -53,6 +53,9 @@ importers:
       svelte-check:
         specifier: ^3.8.4
         version: 3.8.4(postcss-load-config@3.1.4(postcss@8.4.39))(postcss@8.4.39)(svelte@4.2.18)
+      swipe-scroller:
+        specifier: ^1.0.6
+        version: 1.0.6(svelte@4.2.18)
       tslib:
         specifier: ^2.6.3
         version: 2.6.3
@@ -1152,6 +1155,11 @@ packages:
   svelte@4.2.18:
     resolution: {integrity: sha512-d0FdzYIiAePqRJEb90WlJDkjUEx42xhivxN8muUBmfZnP+tzUgz12DJ2hRJi8sIHCME7jeK1PTMgKPSfTd8JrA==}
     engines: {node: '>=16'}
+
+  swipe-scroller@1.0.6:
+    resolution: {integrity: sha512-s98lFry+9y1yqz6BxtJOJgyCoIB5ETiw+Xkqj58hRR7304bGlMeqnyWXQXuG0Jnqnlor+Kb7quYfZ60pWw/MYg==}
+    peerDependencies:
+      svelte: ^3.55.1 || ^4.0.0
 
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
@@ -2285,6 +2293,10 @@ snapshots:
       locate-character: 3.0.0
       magic-string: 0.30.10
       periscopic: 3.1.0
+
+  swipe-scroller@1.0.6(svelte@4.2.18):
+    dependencies:
+      svelte: 4.2.18
 
   text-table@0.2.0: {}
 
