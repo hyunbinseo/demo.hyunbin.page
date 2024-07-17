@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@sun-typeface/suit':
+        specifier: ^2.0.4
+        version: 2.0.4
       '@sveltejs/adapter-static':
         specifier: ^3.0.2
         version: 3.0.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.4))(svelte@4.2.18)(vite@5.3.4))
@@ -41,6 +44,9 @@ importers:
       prettier-plugin-svelte:
         specifier: ^3.2.5
         version: 3.2.5(prettier@3.3.3)(svelte@4.2.18)
+      print-friendly:
+        specifier: ^0.3.2
+        version: 0.3.2
       svelte:
         specifier: ^4.2.18
         version: 4.2.18
@@ -350,6 +356,9 @@ packages:
     resolution: {integrity: sha512-yjk2MAkQmoaPYCSu35RLJ62+dz358nE83VfTePJRp8CG7aMg25mEJYpXFiD+NcevhX8LxD5OP5tktPXnXN7GDw==}
     cpu: [x64]
     os: [win32]
+
+  '@sun-typeface/suit@2.0.4':
+    resolution: {integrity: sha512-zx8RMkEUcrOt5J3/h6ivAhZLAO/jam2dfgAlpuWCdRHSOnen+6CDRJXCL+DcWjeb7gt1yT5wasCwhh2Ye1Bg1g==}
 
   '@sveltejs/adapter-static@3.0.2':
     resolution: {integrity: sha512-/EBFydZDwfwFfFEuF1vzUseBoRziwKP7AoHAwv+Ot3M084sE/HTVBHf9mCmXfdM9ijprY5YEugZjleflncX5fQ==}
@@ -992,6 +1001,9 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  print-friendly@0.3.2:
+    resolution: {integrity: sha512-DUy0J5ffjA4Njtt2fCEyCiUASkGssNyvVqh3U5hTrmWLlO1N6tcvjQPBwYGVeqoCLJv3Nt0ExIFun/JQY73T8w==}
+
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
@@ -1435,6 +1447,8 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.18.1':
     optional: true
+
+  '@sun-typeface/suit@2.0.4': {}
 
   '@sveltejs/adapter-static@3.0.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.4))(svelte@4.2.18)(vite@5.3.4))':
     dependencies:
@@ -2111,6 +2125,8 @@ snapshots:
       svelte: 4.2.18
 
   prettier@3.3.3: {}
+
+  print-friendly@0.3.2: {}
 
   punycode@2.3.1: {}
 
