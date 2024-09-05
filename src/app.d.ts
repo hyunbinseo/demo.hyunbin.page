@@ -5,7 +5,16 @@ declare global {
 		// interface Error {}
 		// interface Locals {}
 		interface PageData {
-			meta: { title: string; description: string };
+			meta:
+				| {
+						title: string;
+						description: string;
+						noindex?: never;
+				  }
+				| {
+						title?: string;
+						noindex: true;
+				  };
 		}
 		// interface PageState {}
 		// interface Platform {}
