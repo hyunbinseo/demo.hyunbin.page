@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	{#if !$page.data.meta.noindex}
+	{#if $page.data.meta.noindex !== true}
 		<title>{$page.data.meta.title} / {siteName}</title>
 		<meta property="og:title" content="[Demo] {$page.data.meta.title}" />
 		<meta name="description" content={$page.data.meta.description} />
