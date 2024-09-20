@@ -8,7 +8,7 @@
 	let invertButtons = false;
 </script>
 
-<div class="container-outer" style="position: fixed; inset: 0;" />
+<div class="container-outer" style="position: fixed; inset: 0;"></div>
 
 <div style="position: relative; overflow-x: hidden;">
 	<div class="container-inner" style="margin-bottom: 1rem;">
@@ -17,7 +17,7 @@
 			<span>Modern Slider.</span>
 			<a href="https://github.com/hyunbinseo/swipe-scroller#readme" target="_blank">GitHub</a>
 		</p>
-		<div class="line" />
+		<div class="line"></div>
 		<h2>xiihu</h2>
 		<p>Discography, from latest</p>
 	</div>
