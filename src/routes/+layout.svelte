@@ -1,12 +1,12 @@
 <script>
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	const siteName = 'OSS @hyunbinseo';
 </script>
 
 <svelte:head>
-	{#if $page.data.meta}
-		{@const meta = $page.data.meta}
+	{#if page.data.meta}
+		{@const meta = page.data.meta}
 		{#if !meta.noindex}
 			<title>{meta.title} / {siteName}</title>
 			<meta property="og:title" content="[Demo] {meta.title}" />

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { controlDialogWithUrlHash } from 'hash-dialog-modal';
 	import type { Action } from 'svelte/action';
 
@@ -28,7 +28,7 @@
 	<form method="dialog">
 		<h1>This is a Modal</h1>
 		<ul>
-			<li>Current hash value is {$page.url.hash}</li>
+			<li>Current hash value is {page.url.hash}</li>
 			<li><button>Close</button> or press the Esc key.</li>
 		</ul>
 	</form>
