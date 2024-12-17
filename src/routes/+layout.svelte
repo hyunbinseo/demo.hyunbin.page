@@ -1,24 +1,25 @@
 <script>
 	import { page } from '$app/state';
+	import { PUBLIC_SITE_NAME } from '$env/static/public';
+	import './normalize.css';
 
-	const siteName = 'OSS @hyunbinseo';
+	const { children } = $props();
 </script>
 
 <svelte:head>
+	<!-- PageData values can be undefined despite being typed. -->
+	<!-- Blocked by https://github.com/sveltejs/kit/issues/11018 -->
 	{#if page.data.meta}
-		{@const meta = page.data.meta}
-		{#if !meta.noindex}
-			<title>{meta.title} / {siteName}</title>
-			<meta property="og:title" content="[Demo] {meta.title}" />
-			<meta name="description" content={meta.description} />
-			<meta property="og:description" content={meta.description} />
-			<meta property="og:site_name" content={siteName} />
-			<meta property="og:type" content="website" />
-		{:else}
-			<title>{meta.title || siteName}</title>
-			<meta name="robots" content="noindex" />
+		{@const { title, description } = page.data.meta}
+		<title>{title} - {PUBLIC_SITE_NAME}</title>
+		<meta property="og:title" content={title} />
+		{#if description}
+			<meta name="description" content={description} />
+			<meta property="og:description" content={description} />
 		{/if}
+		<meta property="og:site_name" content={PUBLIC_SITE_NAME} />
+		<meta property="og:type" content="website" />
 	{/if}
 </svelte:head>
 
-<slot></slot>
+{@render children()}

@@ -4,8 +4,8 @@
 </script>
 
 <header>
-	<a href="https://github.com/hyunbinseo/print-friendly#readme" target="_blank">print-friendly</a>를
-	사용한 HTML 문서입니다.
+	<a href="https://github.com/hyunbinseo/print-friendly#readme" target="_blank">print-friendly</a>로
+	제작된 HTML 문서입니다.
 </header>
 
 <div class="page">
