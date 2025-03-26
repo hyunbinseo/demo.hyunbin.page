@@ -22,6 +22,7 @@
 		<p>Discography, from latest</p>
 	</div>
 	<Scroller {hangButtons} {invertButtons} cardGap="0.5rem">
+		<!-- eslint-disable-next-line svelte/require-each-key -->
 		{#each data.releases as release}
 			<a
 				class="card"
