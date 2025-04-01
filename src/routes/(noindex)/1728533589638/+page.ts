@@ -1,8 +1,7 @@
-import type { PageLoad } from './$types';
+import { redirect } from '@sveltejs/kit';
 
-export const prerender = true;
-export const csr = false;
+export const ssr = false;
 
-export const load = (() => ({
-	meta: { title: 'AVIF 이미지 지원 여부 확인' }
-})) satisfies PageLoad;
+export const load = () => {
+	redirect(302, 'https://hyunbin.cc/browser-image-support');
+};
