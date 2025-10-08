@@ -1,3 +1,1 @@
-- [hash-dialog-modal](https://demo.hyunbin.page/hash-dialog-modal)
-- [print-friendly](https://demo.hyunbin.page/print-friendly)
-- [swipe-scroller](https://demo.hyunbin.page/swipe-scroller)
+Migrated to https://hyunb.in/demos
